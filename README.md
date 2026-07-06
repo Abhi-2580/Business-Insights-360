@@ -1,158 +1,195 @@
-#![icons8-360-48 (1)](https://github.com/user-attachments/assets/cd652607-08aa-4a67-8994-83fef1e98b8d) Business Insights 360 — AtliQ Hardware
+# 📊 Business Insights 360 — AtliQ Hardware
 
-## 📊 Project Overview
-
-Business Insights 360 is a comprehensive Power BI dashboard 
-built for AtliQ Hardware — a global computer hardware and 
-peripherals manufacturer operating across APAC, EU, NA, 
-and LATAM regions.
-
-The dashboard provides a 360-degree view of business 
-performance across Finance, Sales, Marketing, Supply Chain, 
-and Executive dimensions — enabling data-driven decisions 
-at every level of the organization.
-
-This project was built as part of the Codebasics Data 
-Analytics Bootcamp.
+> *"AtliQ is growing revenue strongly but losing $4,010M due to Operational Expense exceeding Gross Margin. This dashboard surfaces the exact pressure points across Finance, Sales, Marketing, and Supply Chain — and points to where decisions need to be made."*
 
 ---
 
-## 🔗 Live Dashboard
+## 🏬 Company Overview
 
-👉 [View Live Power BI Dashboard](#) ← Replace with your link
+AtliQ Hardware (imaginary company) is a rapidly growing electronics company specializing in hardware products including PCs, laptops, accessories, networking equipment, and storage devices. Over the years, AtliQ has expanded significantly, establishing a strong global presence across APAC, North America, Latin America, and the European Union.
+
+The company distributes its products through two primary sales platforms:
+- **Brick-and-Mortar Stores** — Partnering with physical retail outlets like Croma and Best Buy.
+- **E-Commerce Platforms** — Selling through online giants like Amazon and Flipkart.
+
+AtliQ operates through three sales channels:
+- **Retailers** — Third-party sellers, both online and offline, that stock and sell AtliQ's products.
+- **Direct Stores** — AtliQ's own branded stores where consumers purchase directly.
+- **Distributors** — In restricted markets like China and South Korea, AtliQ collaborates with large distributors to ensure product availability.
+
+**Note:** AtliQ's customers are retailers and distributors. The end users are consumers.
 
 ---
 
-## 🎯 Business Problem
+## 🔎 Problem Statement
 
-AtliQ Hardware was relying on Excel-based reporting which 
-was unable to handle the scale and complexity of their 
-growing global operations. Leadership needed a single 
-source of truth — a unified dashboard that could surface 
-actionable insights across all business functions quickly 
-and accurately.
+AtliQ Hardware's reliance on scattered Excel sheets for analytics led to inefficient decision-making and significant losses — particularly during its Latin American expansion. Meanwhile, competitors leveraging advanced data analytics gained a competitive edge.
+
+To improve transparency, enable data-driven decisions, and stay competitive, AtliQ launched a data analytics initiative to build a unified, multi-functional business intelligence dashboard.
 
 ---
 
-## 💡 Key Insights Delivered
+## 🎯 Project Objective
 
-### Finance
-- Net Sales reached $19.37bn — up 61.5% vs Last Year
-- Net Profit is -20.71% driven by Operational Expense 
-  of $11,061M exceeding Gross Margin of $7,051M
-- Pre Invoice and Post Invoice Deductions consuming 
-  53% of Gross Sales — growing faster than revenue
+To develop an intuitive Power BI dashboard that delivers actionable insights for Finance, Sales, Marketing, and Supply Chain teams — along with an Executive view for leadership. The goal is to enhance transparency, improve data accessibility, and empower stakeholders to make informed decisions for strategic growth.
 
-### Sales
-- Every product segment shows declining GM% vs Last Year
-- Amazon — largest customer — grew 58.5% in revenue 
-  but GM% declined -5.2%, signaling over-discounting
-- APAC region shows healthiest GM% positioning 
-  across all regions
+---
 
-### Marketing
-- India is AtliQ's largest market at $4,623M NS but 
-  most loss-making at -42.30% Net Profit
-- South Korea is the only major market with positive 
-  Net Profit at +1.23% — a profitability benchmark
-- No product category is currently profitable — 
-  structural cost problem, not a product problem
+## 🛢️ Data Overview
 
-### Supply Chain
-- Forecast Accuracy improved to 91.41% (+0.57% vs LY)
-- Absolute Error grew 48.32% to 37M — errors scaling 
-  with business growth
-- AtliQ Exclusive — highest margin channel — is 
-  consistently Out of Stock due to under-forecasting
+AtliQ Hardware provided two SQL databases and three Excel files for analysis.
+
+**Excel Files:**
+- Operating Expenses
+- Targets *(available only for FY 2022)*
+- Market Share *(limited to the PC division)*
+
+**SQL Databases:**
+
+| Database | Tables |
+|----------|--------|
+| gdb041 | fact_forecast_monthly, fact_sales_monthly, dim_customer, dim_market, dim_product |
+| gdb056 | freight_cost, gross_price, manufacturing_cost, post_invoice_deductions, pre_invoice_deductions |
+
+AtliQ's fiscal year runs **September to August**. The dataset covers actual sales from **September 2017 to December 2021**.
+
+**NOTE:** Since this is a bootcamp project, the data files cannot be shared publicly.
+
+---
+
+## 🧹 Data Cleaning & Transformation
+
+** Standardisation:**
+- Removed leading and trailing spaces from text fields.
+- Standardised naming conventions across tables for consistency.
+
+**Data Structuring & Optimization:**
+- Created a `dim_date` table for accurate time-based analysis aligned to AtliQ's fiscal year.
+- Merged `fact_sales_monthly` and `fact_forecast_monthly` into a single table `fact_actual_estimates` to simplify calculations and reduce model complexity.
+- Added calculated fields in `fact_actual_estimates` by deriving values from related tables (e.g., pre-invoice deduction amounts from percentage values in the pre_invoice_deductions table).
+- Disabled load for intermediate tables used only for derivations — reducing Power BI report size and improving performance.
+
+---
+
+## 📑 Report Inclusions
+
+This repository includes a PDF version of the Power BI report and the underlying data model.
+
+- 📊 [Live Dashboard](#) ← *Replace with your Power BI published link*
+- 📄 [PDF Report](#) ← *Replace with your PDF link*
+- 🗂️ [Data Model](#) ← *Replace with your data model image link*
+- 🎥 [Video Walkthrough](#) ← *Replace with your YouTube/presentation link*
+
+---
+
+## 💡 Key Insights
+
+### 💰 Financial Performance
+- Net Sales reached **$19.37bn** — up **61.5% vs Last Year** — strong top-line growth.
+- Net Profit is **-20.71%** because Operational Expense ($11,061M) is **1.57x the Gross Margin** ($7,051M).
+- Pre Invoice and Post Invoice Deductions consume **53% of Gross Sales** — and are growing faster than revenue, compressing GM%.
+- GM% declined to **36.41%** — down 2.17% vs Last Year — squeezed from both deduction growth and COGS rising faster than Net Sales.
+
+### 📈 Sales Performance
+- Every product segment shows **negative ∆GM%** vs Last Year — revenue is growing through over-discounting.
+- **Amazon** — largest customer — grew revenue 58.5% but GM% declined **-5.2%**, signaling margin sacrifice for volume.
+- **APAC** shows the healthiest GM% positioning across all regions, suggesting pricing discipline is achievable.
+- **AtliQ Exclusive** (own channel) delivers the highest GM% at 43.73% — the most profitable channel in the portfolio.
+
+### 📣 Marketing Performance
+- **India** is AtliQ's largest market at $4,623M NS but the most loss-making at **-42.30% Net Profit** — the biggest geographic risk.
+- **South Korea** is the only major market with positive Net Profit at **+1.23%** — proving profitability is achievable.
+- No product category is currently profitable — this is a **structural OpEx problem**, not a product problem.
+- **Business Laptop** ($3,386M NS) and **Gaming Laptop** ($3,132M NS) are the highest revenue categories but both deeply loss-making.
+
+### 🚚 Supply Chain Performance
+- Forecast Accuracy improved to **91.41%** (+0.57% vs Last Year) — positive direction.
+- However, **Absolute Error grew 48.32%** to 37M — errors are scaling faster than the business, not shrinking.
+- **AtliQ Exclusive** — highest margin channel — has the worst forecast accuracy at 76.82% and is consistently **Out of Stock** (-497K Net Error).
+- **Networking** is the only product segment with OOS risk — all other segments carry Excess Inventory risk.
+
+### 🌍 Competitive Position
+- AtliQ's PC Market Share grew from ~1% (FY2021) to ~6% (FY2022) — consistent growth.
+- **Dale** remains the dominant competitor — significant market share gap remains.
+- **Retailers** contribute ~72% of revenue — heavy channel concentration risk.
+
+---
+
+## 📝 Recommendations
+
+1. **Break down and reduce OpEx** — At $11,061M it is the single biggest lever to profitability. No targeted cost action is possible without an OpEx category breakdown.
+2. **Review India's go-to-market strategy** — $4,623M revenue generating -$1,955M Net Profit is value destruction, not growth. Reprice, reduce promotional spend, or refocus on higher-margin categories.
+3. **Shift to performance-based discounting** — Replace flat post-invoice discounts with a model tied to customer GM% contribution to stop margin erosion.
+4. **Prioritise AtliQ Exclusive in supply planning** — It is our highest-margin channel but consistently out of stock. Lost sales there are doubly damaging.
+5. **Use South Korea as a profitability benchmark** — Study its cost and channel model and replicate across other markets.
+6. **Scale forecasting capability with business growth** — Forecast Accuracy % improving while Absolute Error grows 48% means the forecasting model is not keeping pace with business scale.
+7. **Reduce deduction rate** — Pre Invoice Deductions at $9,384M represent 24% of Gross Sales. Even a 2% reduction would materially improve GM%.
+8. **Align inventory and promotions with September–December sales surge** — Sales consistently peak in Q4; supply chain and marketing should plan ahead for this window.
 
 ---
 
 ## 🗂️ Dashboard Views
 
-| View | Purpose |
-|------|---------|
-| Home | Navigation hub for all views |
-| Finance | P&L Statement, GM% trend, Net Sales performance |
-| Sales | Customer & Product Performance Matrix, Unit Economics |
-| Marketing | Segment & Market Profitability, GM% scatter analysis |
-| Supply Chain | Forecast Accuracy, Net Error, Risk by Customer & Product |
-| Executive | Top level KPIs, Market Share, Yearly trends |
+| View | Key Metrics |
+|------|-------------|
+| 🏠 Home | Navigation hub with report overview |
+| 💰 Finance | P&L Statement, GM% trend, Net Sales vs Benchmark |
+| 📈 Sales | Customer & Product Performance Matrix, Unit Economics |
+| 📣 Marketing | Segment & Market Profitability, GM% scatter analysis |
+| 🚚 Supply Chain | Forecast Accuracy, Net Error, Risk by Customer & Product |
+| 👔 Executive | Top-level KPIs, PC Market Share, Yearly trends |
 
 ---
 
 ## 🛠️ Tools & Technologies
 
-| Tool | Usage |
-|------|-------|
-| Power BI Desktop | Dashboard development |
-| Power Query | Data transformation & ETL |
-| DAX | Calculated measures & KPIs |
+| Tool | Purpose |
+|------|---------|
+| Power BI Desktop | Dashboard development & visualization |
+| Power Query | Data cleaning, transformation & ETL |
+| DAX | Calculated measures, KPIs & business logic |
 | MySQL | Data source & extraction |
-| Excel | Data validation & exploration |
-
----
-
-## 📐 Data Model
-
-- Fact tables: Sales, Forecast, Market Share
-- Dimension tables: Customer, Product, Market, Date
-- Star schema design for optimized query performance
-- Data loaded through MySQL → Power Query → Power BI
-
----
-
-## 📸 Dashboard Screenshots
-
-### Home Page
-![Home](screenshots/Home.png)
-
-### Finance View
-![Finance](screenshots/Finance.png)
-
-### Sales View
-![Sales](screenshots/Sales.png)
-
-### Marketing View
-![Marketing](screenshots/Marketing.png)
-
-### Supply Chain View
-![Supply Chain](screenshots/Supply_Chain.png)
-
-### Executive View
-![Executive](screenshots/Executive.png)
+| Microsoft Excel | Operating expenses, targets & market share data |
 
 ---
 
 ## 📁 Repository Structure
+
+```
 atliq-business-insights-360/
 │
 ├── README.md
 ├── BusinessInsights360.pbix
 │
 └── screenshots/
-├── home.png
-├── finance.png
-├── sales.png
-├── marketing.png
-├── supply_chain.png
-└── executive.png
+    ├── home.png
+    ├── finance.png
+    ├── sales.png
+    ├── marketing.png
+    ├── supply_chain.png
+    └── executive.png
+```
+
 ---
 
 ## 🎓 Acknowledgements
 
 - **Dhaval Patel** — Mentor & Instructor, Codebasics
 - **Hemanand Vadivel** — Instructor, Codebasics
-- **Codebasics Data Analytics Bootcamp** — Project guidance 
-  and dataset
+- [Codebasics Data Analytics Bootcamp](https://codebasics.io/) — Project guidance and dataset
 
 ---
 
 ## 🙋 About Me
 
-I am an aspiring Data Analyst with skills in Power BI, 
-Excel, and SQL — passionate about turning raw data into 
-Business insights that drive decisions.
+I am an aspiring Data Analyst with hands-on experience in Power BI, Excel, and SQL — passionate about turning raw data into business insights that drive real decisions.
+
+This project reflects not just technical skills but business thinking — understanding what a CFO, Sales Director, Marketing Head, and Supply Chain Head actually need from data.
 
 📧 [Your Email]
 💼 [Your LinkedIn Profile URL]
 🐙 [Your GitHub Profile URL]
+
+---
+
+*Built as part of the Codebasics Data Analytics Bootcamp*
