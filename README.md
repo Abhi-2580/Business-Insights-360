@@ -1,6 +1,4 @@
-# Business-Insights-360
-Power BI dashboard analyzing AtliQ Hardware's business performance across Finance, Sales, Marketing, Supply Chain, and Executive views.
-# Business Insights 360 — AtliQ Hardware
+#![icons8-360-48 (1)](https://github.com/user-attachments/assets/cd652607-08aa-4a67-8994-83fef1e98b8d) Business Insights 360 — AtliQ Hardware
 
 ## 📊 Project Overview
 
