@@ -1,3 +1,5 @@
+# ![icons8-360-48 (1)](https://github.com/user-attachments/assets/cd652607-08aa-4a67-8994-83fef1e98b8d) Business Insights 360  
+
 # 📊 Business Insights 360 — AtliQ Hardware
 
 > *"AtliQ is growing revenue strongly but losing $4,010M due to Operational Expense exceeding Gross Margin. This dashboard surfaces the exact pressure points across Finance, Sales, Marketing, and Supply Chain — and points to where decisions need to be made."*
