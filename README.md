@@ -126,3 +126,35 @@ and accurately.
 ---
 
 ## 📁 Repository Structure
+atliq-business-insights-360/
+│
+├── README.md
+├── BusinessInsights360.pbix
+│
+└── screenshots/
+├── home.png
+├── finance.png
+├── sales.png
+├── marketing.png
+├── supply_chain.png
+└── executive.png
+---
+
+## 🎓 Acknowledgements
+
+- **Dhaval Patel** — Mentor & Instructor, Codebasics
+- **Hemanand Vadivel** — Instructor, Codebasics
+- **Codebasics Data Analytics Bootcamp** — Project guidance 
+  and dataset
+
+---
+
+## 🙋 About Me
+
+I am an aspiring Data Analyst with skills in Power BI, 
+Excel, and SQL — passionate about turning raw data into 
+Business insights that drive decisions.
+
+📧 [Your Email]
+💼 [Your LinkedIn Profile URL]
+🐙 [Your GitHub Profile URL]
