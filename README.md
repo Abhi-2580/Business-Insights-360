@@ -106,22 +106,22 @@ and accurately.
 ## 📸 Dashboard Screenshots
 
 ### Home Page
-![Home](screenshots/home.png)
+![Home](screenshots/Home.png)
 
 ### Finance View
-![Finance](screenshots/finance.png)
+![Finance](screenshots/Finance.png)
 
 ### Sales View
-![Sales](screenshots/sales.png)
+![Sales](screenshots/Sales.png)
 
 ### Marketing View
-![Marketing](screenshots/marketing.png)
+![Marketing](screenshots/Marketing.png)
 
 ### Supply Chain View
-![Supply Chain](screenshots/supply_chain.png)
+![Supply Chain](screenshots/Supply_Chain.png)
 
 ### Executive View
-![Executive](screenshots/executive.png)
+![Executive](screenshots/Executive.png)
 
 ---
 
