@@ -14,7 +14,7 @@ The company serves a diverse customer base through two primary sales platforms:
 
 Additionally, AtliQ operates through three sales channels:
 - **Retailers** — Third-party sellers, both online and offline, that stock and sell AtliQ's products. For example, Croma and Amazon.
-- **Direct Stores** — AtliQ's own physical stores, like AtliQe-store, AtliQ Exclusive, where consumers purchase directly.
+- **Direct Stores** — AtliQ's own physical stores, like AtliQe-store and AtliQ Exclusive, where consumers purchase directly.
 - **Distributors** — In countries such as China and South Korea, where direct sales are restricted, AtliQ has partnered with large distributors like Neptune. These distributors then supply products to local retailers.
 
 **Note:** AtliQ's customers are retailers and distributors, while the consumers are the end users.
@@ -22,7 +22,6 @@ Additionally, AtliQ operates through three sales channels:
 ---
 
 ## 🔎 Problem Statement
-
 AtliQ Hardware had grown rapidly over the years. Due to this, the company decided to expand its operations in Latin America. But in this region, the company faced huge losses despite opening several stores. Meanwhile, one of its competitors, Dell, experienced significant growth throughout the year.
 AtliQ set up a team of executives to investigate the reason behind their failure in the region and their main finding was that their decisions were based on two things -
 1. Multiple Excel files that were not effective in generating insights
@@ -87,9 +86,8 @@ The company had provided two SQL databases: GDB041, GDB056 and three Excel files
 This repository includes a PDF version of the Power BI report and the underlying data model.
 
 - 📊 [Live Dashboard](https://app.powerbi.com/groups/me/reports/a89489a5-56f9-4eee-b555-9e5528c88257/31181b0a108c17909188?experience=power-bi&clientSideAuth=0)
-- 📄 [PDF Report](#) ← *Replace with your PDF link*
-- 🗂️ [Data Model](#) ← *Replace with your data model image link*
-- 🎥 [Video Walkthrough](#) ← *Replace with your YouTube/presentation link*
+- 📄 [PDF Report](./BI360.pdf) ← *Replace with your PDF link*
+- 🗂️ [Data Model](./DataModel.png) ← *Replace with your data model image link*
 
 ---
 
