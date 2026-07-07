@@ -1,50 +1,56 @@
-# ![icons8-360-48 (1)](https://github.com/user-attachments/assets/cd652607-08aa-4a67-8994-83fef1e98b8d) Business Insights 360  
-
 # 📊 Business Insights 360 — AtliQ Hardware
 
-> *"AtliQ is growing revenue strongly but losing $4,010M due to Operational Expense exceeding Gross Margin. This dashboard surfaces the exact pressure points across Finance, Sales, Marketing, and Supply Chain — and points to where decisions need to be made."*
+> *"AtliQ's revenue is growing fast, but the company is losing about $4,010M because its Operational Expenses are higher than its Gross Margin. This dashboard highlights the main problem areas across Finance, Sales, Marketing, and Supply Chain, helping decision-makers see where action is needed."*
 
 ---
 
 ## 🏬 Company Overview
 
-AtliQ Hardware (imaginary company) is a rapidly growing electronics company specializing in hardware products including PCs, laptops, accessories, networking equipment, and storage devices. Over the years, AtliQ has expanded significantly, establishing a strong global presence across APAC, North America, Latin America, and the European Union.
+AtliQ Hardware (a fictional company) is one of the fastest-growing companies in the consumer electronics market, specialised in hardware products such as PCs, Laptops, Accessories, Printers, Networking Equipment, Storage Devices, and more. Over the years, AtliQ has expanded globally and now operates across Asia Pacific (APAC), North America(NA), Latin America (LATAM), and the European Union (EU).
 
-The company distributes its products through two primary sales platforms:
-- **Brick-and-Mortar Stores** — Partnering with physical retail outlets like Croma and Best Buy.
-- **E-Commerce Platforms** — Selling through online giants like Amazon and Flipkart.
+The company serves a diverse customer base through two primary sales platforms:
+- **Brick-and-Mortar Stores** — Physical retail outlets such as Croma, Vijay Sales and Best Buy.
+- **E-Commerce Platforms** — Online retailers such as Amazon and Flipkart.
 
-AtliQ operates through three sales channels:
-- **Retailers** — Third-party sellers, both online and offline, that stock and sell AtliQ's products.
-- **Direct Stores** — AtliQ's own branded stores where consumers purchase directly.
-- **Distributors** — In restricted markets like China and South Korea, AtliQ collaborates with large distributors to ensure product availability.
+Additionally, AtliQ operates through three sales channels:
+- **Retailers** — Third-party sellers, both online and offline, that stock and sell AtliQ's products. For example, Croma and Amazon.
+- **Direct Stores** — AtliQ's own physical stores, like AtliQe-store, AtliQ Exclusive, where consumers purchase directly.
+- **Distributors** — In countries such as China and South Korea, where direct sales are restricted, AtliQ has partnered with large distributors like Neptune. These distributors then supply products to local retailers.
 
-**Note:** AtliQ's customers are retailers and distributors. The end users are consumers.
+**Note:** AtliQ's customers are retailers and distributors, while the consumers are the end users.
 
 ---
 
 ## 🔎 Problem Statement
 
-AtliQ Hardware's reliance on scattered Excel sheets for analytics led to inefficient decision-making and significant losses — particularly during its Latin American expansion. Meanwhile, competitors leveraging advanced data analytics gained a competitive edge.
+AtliQ Hardware had grown rapidly over the years. Due to this, the company decided to expand its operations in Latin America. But in this region, the company faced huge losses despite opening several stores. Meanwhile, one of its competitors, Dell, experienced significant growth throughout the year.
+AtliQ set up a team of executives to investigate the reason behind their failure in the region and their main finding was that their decisions were based on two things -
+1. Multiple Excel files that were not effective in generating insights
+2. Intuition and survey data rather than deep analytical insights.
+Meanwhile, competitor Dell has a strong data analytics team to tackle those issues.
 
-To improve transparency, enable data-driven decisions, and stay competitive, AtliQ launched a data analytics initiative to build a unified, multi-functional business intelligence dashboard.
+To address these challenges, AtliQ's senior executives launched a data analytics initiative and assigned us the responsibility of improving decision-making and helping the company gain a strategic advantage.
 
 ---
 
 ## 🎯 Project Objective
 
-To develop an intuitive Power BI dashboard that delivers actionable insights for Finance, Sales, Marketing, and Supply Chain teams — along with an Executive view for leadership. The goal is to enhance transparency, improve data accessibility, and empower stakeholders to make informed decisions for strategic growth.
+The objective of this project is to develop a user-friendly and intuitive Power BI dashboard for AtliQ Hardware.
+The dashboard delivers actionable insights for Finance, Sales, Marketing, and Supply Chain business functions. In addition, it provides a high-level Executive View. The dashboard empowers stakeholders to:
+Identify business opportunities
+Detect performance gaps
+Make data-driven decisions
+Improve transparency
+Enhance data accessibility
+Drive smarter business strategies for greater efficiency
 
 ---
 
 ## 🛢️ Data Overview
 
-AtliQ Hardware provided two SQL databases and three Excel files for analysis.
+AtliQ's fiscal year runs **September to August**.  The dataset covers actual sales from **1 September 2017 to 1 August 2025D** with **3.7+ million records**.
 
-**Excel Files:**
-- Operating Expenses
-- Targets *(available only for FY 2022)*
-- Market Share *(limited to the PC division)*
+The company had provided two SQL databases: GDB041, GDB056 and three Excel files: Operating Expenses, Targets, and Market Share for analysis.
 
 **SQL Databases:**
 
@@ -53,7 +59,10 @@ AtliQ Hardware provided two SQL databases and three Excel files for analysis.
 | gdb041 | fact_forecast_monthly, fact_sales_monthly, dim_customer, dim_market, dim_product |
 | gdb056 | freight_cost, gross_price, manufacturing_cost, post_invoice_deductions, pre_invoice_deductions |
 
-AtliQ's fiscal year runs **September to August**. The dataset covers actual sales from **September 2017 to December 2021**.
+**Excel Files:**
+- Operating Expenses
+- Targets *(the data is available only for Fiscal Year 2022 - 2025)*
+- Market Share *(the data is available only for the Personal Computer division)*
 
 **NOTE:** Since this is a bootcamp project, the data files cannot be shared publicly.
 
@@ -61,7 +70,7 @@ AtliQ's fiscal year runs **September to August**. The dataset covers actual sale
 
 ## 🧹 Data Cleaning & Transformation
 
-** Standardisation:**
+**Standardisation:**
 - Removed leading and trailing spaces from text fields.
 - Standardised naming conventions across tables for consistency.
 
@@ -69,7 +78,7 @@ AtliQ's fiscal year runs **September to August**. The dataset covers actual sale
 - Created a `dim_date` table for accurate time-based analysis aligned to AtliQ's fiscal year.
 - Merged `fact_sales_monthly` and `fact_forecast_monthly` into a single table `fact_actual_estimates` to simplify calculations and reduce model complexity.
 - Added calculated fields in `fact_actual_estimates` by deriving values from related tables (e.g., pre-invoice deduction amounts from percentage values in the pre_invoice_deductions table).
-- Disabled load for intermediate tables used only for derivations — reducing Power BI report size and improving performance.
+- Disabled load for intermediate tables (fact_sales_monthly, gross_price, pre_invoice_deductions) used only for derivations — reducing Power BI report size and improving performance.
 
 ---
 
@@ -77,7 +86,7 @@ AtliQ's fiscal year runs **September to August**. The dataset covers actual sale
 
 This repository includes a PDF version of the Power BI report and the underlying data model.
 
-- 📊 [Live Dashboard](#) ← *Replace with your Power BI published link*
+- 📊 [Live Dashboard](https://app.powerbi.com/groups/me/reports/a89489a5-56f9-4eee-b555-9e5528c88257/31181b0a108c17909188?experience=power-bi&clientSideAuth=0)
 - 📄 [PDF Report](#) ← *Replace with your PDF link*
 - 🗂️ [Data Model](#) ← *Replace with your data model image link*
 - 🎥 [Video Walkthrough](#) ← *Replace with your YouTube/presentation link*
