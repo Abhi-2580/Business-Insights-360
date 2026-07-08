@@ -82,15 +82,15 @@ The company had provided two SQL databases: GDB041, GDB056 and three Excel files
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Tools & Skills
 
 | Tool | Purpose |
 |------|---------|
-| Power BI Desktop | Dashboard development & visualization |
-| Power Query | Data cleaning, transformation & ETL |
-| DAX | Calculated measures, KPIs & business logic |
-| MySQL | Data source & extraction |
-| Microsoft Excel | Operating expenses, targets & market share data |
+| Power BI Desktop | Data Modelling, DAX, Measures, Dashboard development & visualisation |
+| Power Query | Data cleaning & ETL |
+| MySQL | Querying and loading data from MySQL into Power BI |
+| DAX Studio | Performance optimization |
+| Excel | Data validation |
 
 ---
 
@@ -99,11 +99,11 @@ The company had provided two SQL databases: GDB041, GDB056 and three Excel files
 | View | Key Metrics |
 |------|-------------|
 | 🏠 Home | Navigation hub with report overview |
-| 💰 Finance | P&L Statement, GM% trend, Net Sales vs Benchmark |
-| 📈 Sales | Customer & Product Performance Matrix, Unit Economics |
-| 📣 Marketing | Segment & Market Profitability, GM% scatter analysis |
-| 🚚 Supply Chain | Forecast Accuracy, Net Error, Risk by Customer & Product |
-| 👔 Executive | Top-level KPIs, PC Market Share, Yearly trends |
+| 💰 Finance | Top 3 KPIs, P&L Statement, Performance Over Time Chart, Top / Bottom Products & Customers Matrix |
+| 📈 Sales | Customer & Product Performance Matrix and Chart, Unit Economics |
+| 📣 Marketing | Segment & Market Profitability, GM% & NP% scatter analysis chart, NS & GM Bifurcation |
+| 🚚 Supply Chain | Top 3 KPIs, Forecast Accuracy / Net Error Trend analysis chart, Risk by Customer & Product |
+| 👔 Executive | Top-level KPIs, Revenue Contribution by Division and Channel, PC Market Share yearly trend, Top 5 Customers and Products |
 
 ---
 
@@ -130,41 +130,26 @@ The Support Panel provides options to resolve issues, submit feedback, request n
 - Pre Invoice and Post Invoice Deductions consume **53% of Gross Sales** — and are growing faster than revenue, compressing GM%.
 - Every product segment shows **negative ∆GM%** vs Last Year — revenue is growing through over-discounting.
 - **Amazon** — largest customer — grew revenue 58.5% but GM% declined **-5.2%**, signaling margin sacrifice for volume.
-- **APAC** shows the healthiest GM% positioning across all regions, suggesting pricing discipline is achievable.
-- **AtliQ Exclusive** (own channel) delivers the highest GM% at 43.73% — the most profitable channel in the portfolio.
-- - Certain products, like AQ 5000 Series Electron 9 5900X, AQ MB Elite, and AQ Wi Power Dx1, had zero sales in FY 2022, likely due to demand shifts or outdated models.
-
+- **AQ Smash 1** under Notebook segment — top product — grew revenue 64.2%, but GM% declined **-1.85%**, signalling the structural problem in the Gross margin of all the products
 
 ### 📣 Marketing Performance
-- **India** is AtliQ's largest market at $4,623M NS but the most loss-making at **-42.30% Net Profit** — the biggest geographic risk.
+- **India** is AtliQ's largest market at $4,623M NS, but the most loss-making at **-42.30% Net Profit** — the biggest geographic risk.
 - **South Korea** is the only major market with positive Net Profit at **+1.23%** — proving profitability is achievable.
 - No product category is currently profitable — this is a **structural OpEx problem**, not a product problem.
-- **Business Laptop** ($3,386M NS) and **Gaming Laptop** ($3,132M NS) are the highest revenue categories but both deeply loss-making.
-- - APAC remained the largest market (FY 2019–FY 2022), led by India, while Latin America was the smallest.
-- Amazon was the top global customer in all years, while Nova (operating in Austria) was the smallest since FY 2020.
-- Notebook segment had the highest Revenue growth in all fiscal years but recorded the most negative Net Profit % in FY 2022, likely due to increased marketing spend.
-- Desktop had the lowest growth in FY 2019 & FY 2020, while Networking became the weakest segment in FY 2022.
-- USB flash drives underperformed in FY 2021 & FY 2022, signaling product or market challenges.
+- **Business Laptop** ($3,386M NS) and **Gaming Laptop** ($3,132M NS) are the highest revenue categories, but both are deeply loss-making.
+- **USB Flash Drives** ($9M NS) is the lowest revenue category but the most loss-making at **-33.00% Net Profit**, needed the most overhauling.
 
 ### 🚚 Supply Chain Performance
 - Forecast Accuracy improved to **91.41%** (+0.57% vs Last Year) — positive direction.
 - However, **Absolute Error grew 48.32%** to 37M — errors are scaling faster than the business, not shrinking.
-- **AtliQ Exclusive** — highest margin channel — has the worst forecast accuracy at 76.82% and is consistently **Out of Stock** (-497K Net Error).
+- **AtliQ Exclusive** — highest-margin channel — has the worst forecast accuracy at 76.82% and is consistently **Out of Stock** (-497K Net Error).
 - **Networking** is the only product segment with OOS risk — all other segments carry Excess Inventory risk.
-- - Forecast Accuracy (FCA%) dropped from ~86% (FY 2019) to ~73% (FY 2020) due to COVID-19 disruptions but improved to ~80% (FY 2021) and ~81% (FY 2022).
-- Excess inventory was a major issue in FY 2019–FY 2020, while stock shortages became a challenge in FY 2021–FY 2022.
-- Work-from-home demand surged in FY 2020, leading to stockouts for processors, keyboards, and WiFi extenders.
 
 ### 🌍 Competitive Position
-- AtliQ's PC Market Share grew from ~1% (FY2021) to ~6% (FY2022) — consistent growth.
-- **Dale** remains the dominant competitor — significant market share gap remains.
-- **Retailers** contribute ~72% of revenue — heavy channel concentration risk.
-- - Atliq’s PC market share grew from ~1% (FY 2021) to ~6% (FY 2022), though Dale remains the dominant player.
-- India was the fastest-growing market (~13% share in FY 2022).
-- Among subzones, North America had the highest revenue in FY 2022, but Atliq’s market penetration remained only ~5%.
-- - Sales peaked from September to December across all years, likely due to festive and year-end promotions.
-- Retailers contributed ~72% of revenue in FY 2022.
-- The UK had the highest marketing costs, making it a key area for strategy review, followed by Germany (low revenue, high marketing spend).
+- **AtliQ's PC** Market Share grew from ~6.7% (FY2024) to ~7.7% (FY2025) — consistent growth.
+- **Dale** remains the dominant competitor — a significant market-share gap remains.
+- **South East Asia (SE)** region was the fastest-growing market (~19.3% share in FY 2025), making AtliQ one of the top 2 players in the region.
+- **Retailers** contribute ~69.7% of revenue — heavy channel concentration risk.
 
 ---
 
@@ -173,48 +158,23 @@ The Support Panel provides options to resolve issues, submit feedback, request n
 1. **Break down and reduce OpEx** — At $11,061M it is the single biggest lever to profitability. No targeted cost action is possible without an OpEx category breakdown.
 2. **Review India's go-to-market strategy** — $4,623M revenue generating -$1,955M Net Profit is value destruction, not growth. Reprice, reduce promotional spend, or refocus on higher-margin categories.
 3. **Shift to performance-based discounting** — Replace flat post-invoice discounts with a model tied to customer GM% contribution to stop margin erosion.
-4. **Prioritise AtliQ Exclusive in supply planning** — It is our highest-margin channel but consistently out of stock. Lost sales there are doubly damaging.
+4. **Prioritise AtliQ Exclusive in supply planning** — It is our highest-margin channel but consistently out of stock. Lost sales are doubly damaging.
 5. **Use South Korea as a profitability benchmark** — Study its cost and channel model and replicate across other markets.
-6. **Scale forecasting capability with business growth** — Forecast Accuracy % improving while Absolute Error grows 48% means the forecasting model is not keeping pace with business scale.
+6. **Scale forecasting capability with business growth** — Forecast Accuracy % improving while Absolute Error grows by 48% means the forecasting model is not keeping pace with business scale.
 7. **Reduce deduction rate** — Pre Invoice Deductions at $9,384M represent 24% of Gross Sales. Even a 2% reduction would materially improve GM%.
-8. **Align inventory and promotions with September–December sales surge** — Sales consistently peak in Q4; supply chain and marketing should plan ahead for this window.
-9. - Gradually reduce operational and marketing expenses after capturing significant market share to improve Net Profit %.
-- Shift from flat post-discounting to a performance-based model per product and customer in each market.
-- Expand distribution and targeted marketing in high-growth region like APAC and in APAC India.
-- Reevaluate the pricing or cost structure of the Notebook segment to enhance Net Profit %.
-- Investigate the underperformance of USB flash drives and consider repositioning, discontinuing, or introducing improved models.
-- Improve forecasting, especially for customers, by leveraging real-time data to minimize stock imbalances and enhance supply chain efficiency.
-- Develop targeted strategies to increase market share in North America.
-- Focus on differentiation to strengthen competitiveness in the PC segment and challenge dominant players like Dale.
-- Optimize marketing spending in the UK and Germany to improve return on investment.
-- Align inventory planning and promotions with the September–December sales surge to maximize seasonal demand.
+8. **Align inventory and promotions with September–December sales surge** — Sales consistently peak in Q1; supply chain and marketing should plan ahead for this window.
 
 
 ## 📎 Links
+
 🌐 [Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7300182118653902849/)  
-- 📊 [Live Dashboard](https://app.powerbi.com/groups/me/reports/a89489a5-56f9-4eee-b555-9e5528c88257/31181b0a108c17909188?experience=power-bi&clientSideAuth=0)
-
----
-
-## 🧠 Skills Gained
-
-- Gained a deeper understanding of business metrics and their impact on a company's performance.
-- Designed insightful, user-centric Power BI dashboards.
-- Developed functional knowledge of finance, sales, marketing, and supply chain, and their influence on business outcomes.
-
----
-
-## 🎓 Acknowledgements
-
-- **Dhaval Patel** — Mentor & Instructor, Codebasics
-- **Hemanand Vadivel** — Instructor, Codebasics
-- [Codebasics Data Analytics Bootcamp](https://codebasics.io/) — Project guidance and dataset
+📊 [Live Dashboard](https://app.powerbi.com/groups/me/reports/a89489a5-56f9-4eee-b555-9e5528c88257/31181b0a108c17909188?experience=power-bi&clientSideAuth=0)
 
 ---
 
 ## 🙋 About Me
 
-I am an aspiring Data Analyst with hands-on experience in Power BI, Excel, and SQL — passionate about turning raw data into business insights that drive real decisions.
+I am an aspiring Data Analyst with hands-on experience in Advanced Excel, Power BI, and SQL — passionate about turning raw data into business insights that drive real decisions.
 
 This project reflects not just technical skills but business thinking — understanding what a CFO, Sales Director, Marketing Head, and Supply Chain Head actually need from data.
 
