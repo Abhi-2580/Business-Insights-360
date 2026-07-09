@@ -113,6 +113,7 @@ The company provided two SQL databases and three Excel files for analysis.
 ---
 
 ## 📑 Report Inclusions
+This repository includes a PDF version of the Power BI report and the underlying data model.
 - 📄 [Dashboard](./BI360.pdf) 
 - 🗂️ [Data Model](./DataModel.png)
 
@@ -180,7 +181,7 @@ The Support Panel provides options to resolve issues, submit feedback, request n
 
 - **Dhaval Patel** — Founder, Codebasics
 - **Hemanand Vadivel** — Co-Founder & CEO, Codebasics
-- [Codebasics Data Analytics Bootcamp 5.O](https://codebasics.io/) — Project guidance and dataset
+- [Codebasics Data Analytics Bootcamp 5.O](https://codebasics.io/bootcamps/data-analytics-bootcamp-with-practical-job-assistance) — Project guidance and dataset
 
 ---
 
@@ -190,9 +191,9 @@ I am an aspiring Data Analyst with hands-on experience in Advanced Excel, Power 
 
 This project reflects not just technical skills but business thinking — understanding what a CFO, Sales Director, Marketing Head, and Supply Chain Head actually need from data.
 
-📧 [Your Email]
-💼 [Your LinkedIn Profile URL]
-🐙 [Your GitHub Profile URL]
+📧 [Email](mailto:abhijeetpal2580@gmail.com) <br>
+💼 [LinkedIn](https://www.linkedin.com/in/abhijeetpal1/)<br>
+🐙 [GitHub](https://github.com/Abhi-2580)
 
 ---
 
