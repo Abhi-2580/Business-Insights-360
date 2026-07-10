@@ -185,7 +185,7 @@ The Support Panel provides options to resolve issues, submit feedback, request n
 
 ---
 
-## 🙋 About Me
+## 👨‍💻 About Me
 
 I am an aspiring Data Analyst with hands-on experience in Advanced Excel, Power BI, and SQL — passionate about turning raw data into business insights that drive real decisions.
 
