@@ -172,7 +172,7 @@ The Support Panel provides options to resolve issues, submit feedback, request n
 
 ## 📎 Links
 
-🌐 [Linkedin Post](https://www.linkedin.com/feed/update/urn:li:activity:7300182118653902849/)  
+🌐 [Linkedin Post](https://www.linkedin.com/posts/abhijeetpal1_bi-360-dashboard-ugcPost-7481212444799811584-_dJh/?utm_source=share&utm_medium=member_desktop&rcm=ACoAACvkoAMBFvZ7S2o6RaOW1TOAftiS92Nraqo)  
 📊 [Live Dashboard](https://app.powerbi.com/groups/me/reports/a89489a5-56f9-4eee-b555-9e5528c88257/31181b0a108c17909188?experience=power-bi&clientSideAuth=0)
 
 ---
